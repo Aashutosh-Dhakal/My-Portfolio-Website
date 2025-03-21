@@ -38,57 +38,50 @@ const ProfileCard: React.FC = () => {
     window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
   };
 
-
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Main Content */}
-      <div
-        className="flex items-center justify-center"
-        style={{
-          margin: "5px",
-          width: "calc(100% - 10px)",
-          height: "calc(100vh - 10px)",
-        }}
-      >
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full h-full flex flex-col items-center justify-center text-center">
-          {/* Image */}
-          <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden border-2 border-black">
-            <Image
-              src="/images/my_pfp.jpeg"
-              alt="Profile"
-              width={192}
-              height={192}
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="flex flex-col min-h-screen bg-gray-100 text-black items-center justify-center p-6 sm:p-12">
+      {/* Profile Image */}
+      <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-black shadow-lg mb-6 sm:mb-8">
+        <Image
+          src="/images/my_pfp.jpeg"
+          alt="Profile"
+          width={224}
+          height={224}
+          className="w-full h-full object-cover"
+          priority
+        />
+      </div>
 
-          {/* Name and Title */}
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Hello, I'm</h1>
-          <h2 className="text-6xl font-bold text-blue-600 mb-6">
-            Aashutosh Dhakal
-          </h2>
-          <p className="text-2xl text-gray-700 mb-6">
-            {text}
-            <span className="blinking-cursor">|</span>
-          </p>
+      {/* Name and Title */}
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center">Hello, I'm</h1>
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-blue-500 my-4 text-center">
+        <span className="block sm:inline">Aashutosh</span>
+        <span className="block sm:inline"> Dhakal</span>
+      </h2>
+      <p className="text-2xl sm:text-2xl md:text-3xl text-gray-800 mb-6 sm:mb-8 text-center">
+        {text}
+        <span className="blinking-cursor">|</span>
+      </p>
 
-          {/* Buttons */}
-          <div className="flex gap-4">
-            <button
-              onClick={handleScroll}
-              className="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg shadow-md border-2 border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-            >
-              Scroll Down
-            </button>
-            <a href="https://drive.google.com/file/d/11RBxsKpdI76jojYtg9LBj-imRmSijQ45/view " target="_blank" rel="noopener noreferrer">
-              <button
-                className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md border-2 border-blue-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-              >
-                Download CV
-              </button>
-            </a>
-          </div>
-        </div>
+      {/* Buttons */}
+      <div className="flex flex-row gap-4 sm:gap-6 w-full justify-center items-center">
+        <button
+          onClick={handleScroll}
+          className="px-6 sm:px-8 py-4 sm:py-5 bg-transparent border-2 border-blue-500 text-blue-500 font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 text-base sm:text-lg focus:ring-2 focus:ring-green-500"
+        >
+          Scroll Down
+        </button>
+        <a
+          href="https://drive.google.com/file/d/11RBxsKpdI76jojYtg9LBj-imRmSijQ45/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            className="px-6 sm:px-8 py-4 sm:py-5 bg-blue-500 text-white font-semibold rounded-lg shadow-lg border-2 border-blue-500 hover:scale-105 transition-transform duration-300 text-base sm:text-lg focus:ring-2 focus:ring-green-500"
+          >
+            Download CV
+          </button>
+        </a>
       </div>
     </div>
   );
