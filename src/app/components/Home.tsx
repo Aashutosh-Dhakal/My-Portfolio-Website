@@ -67,7 +67,7 @@ const ProfileCard: React.FC = () => {
       <div className="flex flex-row gap-4 sm:gap-6 w-full justify-center items-center">
         <button
           onClick={handleScroll}
-          className="px-6 sm:px-8 py-4 sm:py-5 bg-transparent border-2 border-blue-500 text-blue-500 font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 text-base sm:text-lg focus:ring-2 focus:ring-green-500"
+          className="px-6 sm:px-8 py-4 sm:py-5 bg-transparent border-2 border-blue-500 text-blue-500 font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 text-base sm:text-lg"
         >
           Scroll Down
         </button>
@@ -77,7 +77,7 @@ const ProfileCard: React.FC = () => {
           rel="noopener noreferrer"
         >
           <button
-            className="px-6 sm:px-8 py-4 sm:py-5 bg-blue-500 text-white font-semibold rounded-lg shadow-lg border-2 border-blue-500 hover:scale-105 transition-transform duration-300 text-base sm:text-lg focus:ring-2 focus:ring-green-500"
+            className="px-6 sm:px-8 py-4 sm:py-5 bg-blue-500 text-white font-semibold rounded-lg shadow-lg border-2 border-blue-500 hover:scale-105 transition-transform duration-300 text-base sm:text-lg"
           >
             Download CV
           </button>
