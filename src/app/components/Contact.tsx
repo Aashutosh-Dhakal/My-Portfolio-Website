@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div className="flex flex-col min-h-screen bg-gray-100 items-center justify-center text-center px-4">
             {/* Get in Touch Section */}
-            <h4 className="text-4xl font-extrabold mb-6 text-center tracking-wide">
+            <h4 className="text-4xl font-extrabold mb-6 text-center tracking-wide text-black">
                 Get in Touch
             </h4>
             <p className="text-gray-600 text-center mb-8 text-lg">
