@@ -32,23 +32,26 @@ const About = () => {
             <h3 className="text-4xl font-semibold text-gray-800 mt-10 mb-8">My Skills</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-4xl">
                 {[
-                    { icon: <FaPython className="mr-2" />, text: "Python" },
-                    { icon: <SiNumpy className="mr-2" />, text: "Numpy" },
-                    { icon: <SiPandas className="mr-2" />, text: "Pandas" },
-                    { icon: <SiPlotly className="mr-2" />, text: "Matplotlib" },
-                    { icon: <SiTensorflow className="mr-2" />, text: "Tensorflow" },
-                    { icon: <SiPytorch className="mr-2" />, text: "Pytorch" },
-                    { icon: <SiScikitlearn className="mr-2" />, text: "Scikit-learn" },
-                    { icon: <FaBook className="mr-2" />, text: "Mathematics" },
-                    { icon: <FaLinux className="mr-2" />, text: "Linux" },
-                    { icon: <FaTable className="mr-2" />, text: "Excel" },
+                    { icon: <FaPython className="mr-2" />, text: "Python", link: "https://www.python.org/" },
+                    { icon: <SiNumpy className="mr-2" />, text: "Numpy", link: "https://numpy.org/" },
+                    { icon: <SiPandas className="mr-2" />, text: "Pandas", link: "https://pandas.pydata.org/" },
+                    { icon: <SiPlotly className="mr-2" />, text: "Matplotlib", link: "https://matplotlib.org/" },
+                    { icon: <SiTensorflow className="mr-2" />, text: "Tensorflow", link: "https://www.tensorflow.org/" },
+                    { icon: <SiPytorch className="mr-2" />, text: "Pytorch", link: "https://pytorch.org/" },
+                    { icon: <SiScikitlearn className="mr-2" />, text: "Scikit-learn", link: "https://scikit-learn.org/" },
+                    { icon: <FaBook className="mr-2" />, text: "Mathematics", link: "https://en.wikipedia.org/wiki/Mathematics" },
+                    { icon: <FaLinux className="mr-2" />, text: "Linux", link: "https://www.linux.org/" },
+                    { icon: <FaTable className="mr-2" />, text: "Excel", link: "https://www.microsoft.com/en-us/microsoft-365/excel" },
                 ].map((skill, index) => (
-                    <span
+                    <a
                         key={index}
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-gray-200 text-gray-700 px-6 py-3 rounded-xl font-medium flex items-center justify-center transition duration-300 transform hover:scale-105 hover:shadow-md"
                     >
                         {skill.icon} {skill.text}
-                    </span>
+                    </a>
                 ))}
             </div>
         </div>

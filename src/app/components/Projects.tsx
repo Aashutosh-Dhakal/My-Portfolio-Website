@@ -14,9 +14,9 @@ function Card({ image, title, description, link }: CardProps) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full sm:w-80 md:w-96"
+      className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-150 ease-in-out w-full sm:w-80 md:w-96"
     >
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl flex flex-col items-center text-center h-full transform transition-transform duration-300 hover:scale-105">
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl flex flex-col items-center text-center h-full">
         {/* Image */}
         <div className="w-full h-48 relative rounded-lg overflow-hidden mb-6">
           <Image
@@ -24,22 +24,22 @@ function Card({ image, title, description, link }: CardProps) {
             alt={title}
             layout="fill"
             objectFit="cover"
-            className="transition-transform duration-300 group-hover:scale-110"
+            className="transition-transform duration-150 group-hover:scale-105"
           />
         </div>
 
         {/* Title */}
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 transition-colors duration-300 group-hover:text-blue-600">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 transition-colors duration-150 group-hover:text-blue-600">
           {title}
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm sm:text-base mb-4 transition-colors duration-300 group-hover:text-blue-800">
+        <p className="text-gray-600 text-sm sm:text-base mb-4 transition-colors duration-150 group-hover:text-blue-800">
           {description}
         </p>
 
         {/* Link Button */}
-        <button className="mt-auto px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md border-2 border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105 hover:bg-blue-700 hover:border-blue-700">
+        <button className="mt-auto px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md border-2 border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform duration-150 hover:bg-blue-700 hover:border-blue-700">
           View Project
         </button>
       </div>
@@ -77,6 +77,20 @@ function Projects() {
       description:
         "The program preprocesses an input image to match the model's requirements and predicts the most likely objects in it.",
       link: "https://github.com/Aashutosh-Dhakal/Image-Recognition-with-ResNet50-and-openCV-in-Python",
+    },
+    {
+      image: "/images/pdf-to-img.jpg",
+      title: "PDF-to-image-conveter",
+      description:
+        "This tool is designed to easily convert PDF documents into image formats using the pdf2image library in Python.",
+      link: "https://github.com/Aashutosh-Dhakal/PDF-to-image-conveter-using-python-pdf2image",
+    },
+    {
+      image: "/images/AutoMoto.png",
+      title: "AutoMoto",
+      description:
+        "Bike Rental System AutoMoto is a bike rental application that streamlines the bike rental process, making it efficient and user-friendly.",
+      link: "https://github.com/Aashutosh-Dhakal/AutoMoto",
     },
   ];
 

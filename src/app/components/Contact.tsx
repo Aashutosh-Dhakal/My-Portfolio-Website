@@ -1,5 +1,5 @@
 import React from "react";
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi"; // Import icons from react-icons
+import { FiMail, FiMapPin, FiPhone, FiClock } from "react-icons/fi"; // Import icons from react-icons
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"; // Social media icons
 import Footer from "./Footer"; // Import Footer component
 
@@ -40,11 +40,11 @@ const Contact = () => {
                     <p className="text-gray-600">Kathmandu, Nepal</p>
                 </div>
 
-                {/* Phone */}
+                {/* Working Hours */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg">
-                    <FiPhone className="text-3xl text-blue-500 mb-4" />
-                    <h5 className="text-xl font-semibold mb-2">Phone</h5>
-                    <p className="text-gray-600">+977 984-1263536</p>
+                    <FiClock className="text-3xl text-blue-500 mb-4" />
+                    <h5 className="text-xl font-semibold mb-2">Working Hours</h5>
+                    <p className="text-gray-600">9 AM - 6 PM</p>
                 </div>
             </div>
         </div>
